@@ -1,0 +1,37 @@
+stages:
+  preprocess:
+    cmd: python3 preprocess.py data/preprocessed/iris_train.csv data/preprocessed/iris_validate.csv
+    deps:
+    - preprocess.py
+    outs:
+    - data/preprocessed/iris_train.csv
+    - data/preprocessed/iris_validate.csv
+  train:
+    cmd: python3 train.py data/preprocessed/iris_train.csv data/preprocessed/iris_validate.csv
+      model/model.pkl
+    deps:
+    - data/preprocessed/iris_train.csv
+    - data/preprocessed/iris_validate.csv
+    - train.py
+    outs:
+    - model/model.pkl
+    params:
+    - train.penalty
+    - train.solver
+  eval:
+    cmd: python3 eval.py model/model.pkl data/preprocessed/iris_validate.csv
+    deps:
+    - data/preprocessed/iris_validate.csv
+    - eval.py
+    - model/model.pkl
+params:
+- dvclive/params.yaml
+metrics:
+- dvclive/metrics.json
+plots:
+- dvclive/plots/metrics:
+    x: step
+artifacts:
+  iris_lr:
+    path: model/model.pkl
+    type: model

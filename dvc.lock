@@ -1,0 +1,58 @@
+schema: '2.0'
+stages:
+  preprocess:
+    cmd: python3 preprocess.py data/preprocessed/iris_train.csv data/preprocessed/iris_validate.csv
+    deps:
+    - path: preprocess.py
+      hash: md5
+      md5: 50ab75981ac93b261d5ac98103fe6647
+      size: 612
+    outs:
+    - path: data/preprocessed/iris_train.csv
+      hash: md5
+      md5: 36c46355a0fe66d66c875581430e5567
+      size: 15000
+    - path: data/preprocessed/iris_validate.csv
+      hash: md5
+      md5: d18710b844a6eebedaf290ffcd172cf7
+      size: 3750
+  train:
+    cmd: python3 train.py data/preprocessed/iris_train.csv data/preprocessed/iris_validate.csv
+      model/model.pkl
+    deps:
+    - path: data/preprocessed/iris_train.csv
+      hash: md5
+      md5: 36c46355a0fe66d66c875581430e5567
+      size: 15000
+    - path: data/preprocessed/iris_validate.csv
+      hash: md5
+      md5: d18710b844a6eebedaf290ffcd172cf7
+      size: 3750
+    - path: train.py
+      hash: md5
+      md5: 2e2d261b7ebd5a35c7b5429cd2776860
+      size: 1159
+    params:
+      params.yaml:
+        train.penalty: l2
+        train.solver: lbfgs
+    outs:
+    - path: model/model.pkl
+      hash: md5
+      md5: db7b8fdcc5f6adb928e2749782f47fde
+      size: 959
+  eval:
+    cmd: python3 eval.py model/model.pkl data/preprocessed/iris_validate.csv
+    deps:
+    - path: data/preprocessed/iris_validate.csv
+      hash: md5
+      md5: d18710b844a6eebedaf290ffcd172cf7
+      size: 3750
+    - path: eval.py
+      hash: md5
+      md5: c90208fe81a2ed80d6114c296fe6e894
+      size: 603
+    - path: model/model.pkl
+      hash: md5
+      md5: db7b8fdcc5f6adb928e2749782f47fde
+      size: 959

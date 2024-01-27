@@ -1,0 +1,152 @@
+booster[0]:
+0:[petal_length<3] yes=1,no=2,missing=2
+	1:leaf=-0.278906256
+	2:[petal_width<1.60000002] yes=3,no=4,missing=4
+		3:[petal_length<5] yes=5,no=6,missing=6
+			5:leaf=0.00234374776
+			6:leaf=0.151250005
+		4:leaf=0.279230773
+booster[1]:
+0:[petal_length<1.89999998] yes=1,no=2,missing=2
+	1:leaf=-0.201250017
+	2:[petal_length<4.69999981] yes=3,no=4,missing=4
+		3:[sepal_length<5] yes=5,no=6,missing=6
+			5:leaf=0.109365396
+			6:leaf=0.00163351407
+		4:leaf=0.205849603
+booster[2]:
+0:[petal_length<3] yes=1,no=2,missing=2
+	1:leaf=-0.149686351
+	2:[petal_width<1.70000005] yes=3,no=4,missing=4
+		3:[sepal_width<2.70000005] yes=5,no=6,missing=6
+			5:leaf=0.0406957231
+			6:leaf=-0.0425973795
+		4:leaf=0.14712739
+booster[3]:
+0:[petal_length<4.4000001] yes=1,no=2,missing=2
+	1:[petal_length<3] yes=3,no=4,missing=4
+		3:leaf=-0.104573719
+		4:leaf=0.00268225023
+	2:[petal_length<5] yes=5,no=6,missing=6
+		5:[sepal_length<6.0999999] yes=7,no=8,missing=8
+			7:leaf=0.0752251223
+			8:leaf=-0.0235894043
+		6:leaf=0.120674476
+booster[4]:
+0:[petal_length<3] yes=1,no=2,missing=2
+	1:leaf=-0.0782424212
+	2:[sepal_width<2.79999995] yes=3,no=4,missing=4
+		3:[petal_width<1.70000005] yes=7,no=8,missing=8
+			7:leaf=-0.0393054821
+			8:leaf=0.0510902181
+		4:[petal_length<4.80000019] yes=5,no=6,missing=6
+			5:leaf=0.00600967137
+			6:leaf=0.0857793987
+booster[5]:
+0:[sepal_width<3.0999999] yes=1,no=2,missing=2
+	1:[petal_length<4.5] yes=5,no=6,missing=6
+		5:leaf=-0.00291536213
+		6:[sepal_width<2.70000005] yes=7,no=8,missing=8
+			7:leaf=0.10534744
+			8:leaf=0.0317979902
+	2:[petal_length<5] yes=3,no=4,missing=4
+		3:leaf=-0.0574617647
+		4:leaf=0.0339343324
+booster[6]:
+0:[petal_length<5.0999999] yes=1,no=2,missing=2
+	1:[petal_length<5] yes=3,no=4,missing=4
+		3:[petal_length<3.5] yes=5,no=6,missing=6
+			5:leaf=-0.0390651077
+			6:leaf=-0.00654196786
+		4:leaf=-0.129318953
+	2:leaf=0.0448878519
+booster[7]:
+0:[petal_length<5.0999999] yes=1,no=2,missing=2
+	1:[sepal_length<6.5999999] yes=3,no=4,missing=4
+		3:[sepal_width<3.0999999] yes=5,no=6,missing=6
+			5:leaf=-0.00290452968
+			6:leaf=-0.0399202555
+		4:leaf=-0.109921113
+	2:leaf=0.0389074422
+booster[8]:
+0:[petal_length<3] yes=1,no=2,missing=2
+	1:leaf=-0.0278619919
+	2:leaf=0.0172076877
+booster[9]:
+0:[petal_width<1.79999995] yes=1,no=2,missing=2
+	1:[petal_length<5] yes=3,no=4,missing=4
+		3:leaf=-0.0045076427
+		4:[sepal_length<6.80000019] yes=5,no=6,missing=6
+			5:leaf=-0.128841385
+			6:leaf=0.0339893103
+	2:leaf=0.0160892047
+booster[10]:
+0:[petal_width<1.79999995] yes=1,no=2,missing=2
+	1:[petal_length<4.80000019] yes=3,no=4,missing=4
+		3:leaf=-0.00874145515
+		4:leaf=-0.0987744704
+	2:leaf=0.0227465406
+booster[11]:
+0:leaf=-0.000255988649
+booster[12]:
+0:leaf=-0.00165397278
+booster[13]:
+0:[sepal_width<2.29999995] yes=1,no=2,missing=2
+	1:leaf=0.115254469
+	2:[petal_length<4.80000019] yes=3,no=4,missing=4
+		3:leaf=0.00644418504
+		4:[petal_length<5.0999999] yes=5,no=6,missing=6
+			5:leaf=-0.0773266777
+			6:leaf=0.00234687049
+booster[14]:
+0:leaf=-0.0046086316
+booster[15]:
+0:leaf=0.00676806225
+booster[16]:
+0:[sepal_width<2.79999995] yes=1,no=2,missing=2
+	1:[sepal_length<5.9000001] yes=3,no=4,missing=4
+		3:leaf=0.00810634159
+		4:leaf=0.0800108612
+	2:leaf=-0.00795073714
+booster[17]:
+0:[sepal_length<6.19999981] yes=1,no=2,missing=2
+	1:[sepal_width<2.29999995] yes=3,no=4,missing=4
+		3:leaf=0.0856407359
+		4:leaf=-0.00611537974
+	2:[sepal_length<6.4000001] yes=5,no=6,missing=6
+		5:leaf=0.0808602273
+		6:leaf=0.0151047464
+booster[18]:
+0:leaf=0.00412761234
+booster[19]:
+0:[petal_length<5] yes=1,no=2,missing=2
+	1:[petal_width<1.60000002] yes=3,no=4,missing=4
+		3:leaf=0.00338258198
+		4:leaf=0.0525151975
+	2:[petal_width<1.70000005] yes=5,no=6,missing=6
+		5:leaf=-0.0751985013
+		6:leaf=-0.00537043996
+booster[20]:
+0:[petal_length<4.80000019] yes=1,no=2,missing=2
+	1:leaf=-0.00207028608
+	2:[petal_width<1.60000002] yes=3,no=4,missing=4
+		3:leaf=0.112277053
+		4:leaf=0.00871669501
+booster[21]:
+0:[petal_width<1.60000002] yes=1,no=2,missing=2
+	1:[sepal_width<2.70000005] yes=3,no=4,missing=4
+		3:leaf=-0.0516804084
+		4:[sepal_length<6] yes=5,no=6,missing=6
+			5:leaf=0.00024944992
+			6:leaf=0.0591940917
+	2:[petal_length<5.0999999] yes=7,no=8,missing=8
+		7:[sepal_length<5] yes=9,no=10,missing=10
+			9:leaf=0.0274766926
+			10:leaf=-0.0989734903
+		8:leaf=-0.00944679044
+booster[22]:
+0:[sepal_width<2.9000001] yes=1,no=2,missing=2
+	1:[petal_length<4.5] yes=3,no=4,missing=4
+		3:leaf=0.0040999311
+		4:leaf=0.0769888014
+	2:leaf=-0.00459279492
